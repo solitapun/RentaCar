@@ -74,7 +74,7 @@
                 <input type="date" placeholder="Enter your name" name = "leaving">
             </div>
         </div>
-<input type="submit" value="submit" class="send">
+        <input type="submit" value="submit" class="btn" name="send">
     </form>
 </section>
 
@@ -83,20 +83,6 @@
 
 
 <!--booking section  ends-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

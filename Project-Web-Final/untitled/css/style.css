@@ -386,7 +386,7 @@ section{
     color: var(--main-color);
     display: block;
 }
-.reviews.slide img {
+.reviews .slide img {
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
@@ -398,7 +398,7 @@ section{
     gap: 2rem;
 }
 .packages .box-container .box{
-    boder:var(--border);
+    border:var(--border);
     box-shadow: var(--box-shadow);
     background: var(--white);
     display: none;

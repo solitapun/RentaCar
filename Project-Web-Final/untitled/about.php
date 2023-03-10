@@ -87,7 +87,7 @@
                 <p>I am happy with the service and the driver</p>
                 <h3>jonh jackson</h3>
                 <span>traveler</span>
-                <img src="images/pic-1.png"alt="">
+                <img src="images/p1.jpg"alt="">
             </div>
 
             <div class="swiper-slider slide">
@@ -100,7 +100,7 @@
                 <p>Can't wait to book again for the next vacation</p>
                 <h3>jonh jackson</h3>
                 <span>traveler</span>
-                <img src="images/pic-2.png"alt="">
+                <img src="images/p2.jpg"alt="">
             </div>
             <div class="swiper-slider slide">
                 <div class="stars">
@@ -114,7 +114,7 @@
                 <p>we really enjoy the trip along with the comfortable ride</p>
                 <h3>jonh jackson</h3>
                 <span>traveler</span>
-                <img src="images/pic-3.png"alt="">
+                <img src="images/p3.jpg"alt="">
             </div>
 
             <div class="swiper-slider slide">
@@ -129,7 +129,7 @@
                 <p>We'd love to travel with this rental car the next time for the family trip</p>
                 <h3>jonh jackson</h3>
                 <span>traveler</span>
-                <img src="images/pic-4.png"alt="">
+                <img src="images/p4.jpg"alt="">
             </div>
 
             <div class="swiper-slider slide">
@@ -144,7 +144,7 @@
                 <p>Thanks for your service, will try again</p>
                 <h3>jonh jackson</h3>
                 <span>traveler</span>
-                <img src="images/pic-5.png"alt="">
+                <img src="images/p5.jpg"alt="">
             </div>
             <div class="swiper-slider slide">
                 <div class="stars">
@@ -161,7 +161,7 @@
                 </p>
                 <h3>jonh jackson</h3>
                 <span>traveler</span>
-                <img src="images/pic-6.png"alt="">
+                <img src="images/p6.jpg"alt="">
             </div>
     </div>
 </section>

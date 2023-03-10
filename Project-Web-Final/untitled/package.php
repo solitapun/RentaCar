@@ -44,7 +44,6 @@
 <section class="packages">
     <h1 class="heading-title">top destination</h1>
     <div class="box-container">
-
         <div class="box">
             <div class="image">
                 <img src="images/img-1.jpg"alt="">
@@ -167,8 +166,9 @@
         </div>
 
     </div>
-
-    <div class="load-more"><span class="btn">load more</span> </div>
+    <div class="load-more">
+        <span class="btn">load more</span>
+    </div>
 </section>
 
 <!--package section end-->
