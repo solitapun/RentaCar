@@ -20,7 +20,7 @@
 <section class="header">
     <a href="home.php" class="logo">
         <img src="images/logo.png">
-        <p>Santa Linux <br>
+        <p>BookaCab<br>
             <!--            <small style="font-size: 10px">To your Destination</small>-->
         </p>
     </a>
@@ -29,6 +29,7 @@
         <a href="about.php">about</a>
         <a href="package.php">package</a>
         <a href="book.php">book</a>
+        <a href="CheckBooking.php">Check Booking</a>
     </nav>
     <div id="menu-btn" class="fas fa-bars"></div>
 
