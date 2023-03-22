@@ -1,3 +1,37 @@
+<?php
+session_start();
+    include ("connection.php");
+    include ("function.php");
+
+    if ($_SERVER['REQUEST_METHOD']=="POST")
+    {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $address = $_POST['address'];
+        $destination = $_POST['destination'];
+        $guest = $_POST['guests'];
+        $from = $_POST['from'];
+        $to = $_POST['to'];
+
+        if(!empty($user_name) && !empty($email) && !empty($phone) && !empty($address) && !empty($destination) && !empty($guest)
+            && !empty($from) && !empty($to))
+        {
+            //save to database
+            $ID = random_num(20);
+            $query = "insert into (ID,Username,Email,Phone,Address,Destination,People,LeavingDate,ComeBack) 
+                values ('$ID','$name','$email', '$phone', '$address', '$destination', '$guest', '$from', '$to')";
+            mysqli_query($query);
+            header("Location: Reciept.php");
+            die;
+        }
+        else
+        {
+            echo "Please enter valid information";
+        }
+    }
+?>
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -20,7 +54,7 @@
 <section class="header">
     <a href="home.php" class="logo">
         <img src="images/logo.png">
-        <p>Santa Linux <br>
+        <p>BookaCab<br>
             <!--            <small style="font-size: 10px">To your Destination</small>-->
         </p>
     </a>
@@ -29,6 +63,7 @@
         <a href="about.php">about</a>
         <a href="package.php">package</a>
         <a href="book.php">book</a>
+        <a href="CheckBooking.php">Check Booking</a>
     </nav>
     <div id="menu-btn" class="fas fa-bars"></div>
 
@@ -37,7 +72,7 @@
 
 
 <!--header section ends-->
-<div class="heading" style="background:url(images/header-bg-3.jpg)no-repeat">
+<div class="heading" style="background:url(images/Angkor-wat-sunrise.jpg)">
     <h1>book now</h1>
 </div>
 <!--booking section starts-->
@@ -51,30 +86,34 @@
             </div>
             <div class="inputBox">
                 <span>Email :</span>
-                <input type="text" placeholder="Enter your email" name = "email">
+                <input type="email" placeholder="Enter your email" name = "email">
             </div>
             <div class="inputBox">
                 <span>Phone :</span>
-                <input type="number" placeholder="Enter your number" name = "phone">
+                <input type="tel" placeholder="Enter your number" name = "phone">
             </div>
             <div class="inputBox">
                 <span>address :</span>
                 <input type="text" placeholder="Enter your address" name = "address">
             </div>
             <div class="inputBox">
-                <span>where to :</span>
-                <input type="text" placeholder="place you want to visit" name = "location">
+                <span>Destination :</span>
+                <input type="text" placeholder="place you want to visit" name = "destination">
             </div>
             <div class="inputBox">
-                <span>how many :</span>
+                <span>Passenger :</span>
                 <input type="number" placeholder="number of guests" name = "guests">
             </div>
             <div class="inputBox">
-                <span>leaving :</span>
-                <input type="date" placeholder="Enter your name" name = "leaving">
+                <span>From :</span>
+                <input type="date" placeholder="Enter your name" name = "From">
+            </div>
+            <div class="inputBox">
+                <span>To :</span>
+                <input type="date" placeholder="Enter your name" name = "To">
             </div>
         </div>
-<input type="submit" value="submit" class="send">
+        <input type="submit" value="submit" class="btn" name="send">
     </form>
 </section>
 
@@ -83,20 +122,6 @@
 
 
 <!--booking section  ends-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -136,7 +161,7 @@
 
         </div>
     </div>
-    <div class="credit">create by <span>mr.web designer</span>| all right reserved!</div>
+    <div class="credit">create by <span>Santa Linux</span> &nbsp;| all right reserved!</div>
 </section>
 <!---footer section end-->
 

@@ -20,7 +20,7 @@
 <section class="header">
     <a href="home.php" class="logo">
         <img src="images/logo.png">
-        <p>Santa Linux <br>
+        <p>BookaCab <br>
             <!--            <small style="font-size: 10px">To your Destination</small>-->
         </p>
     </a>
@@ -29,6 +29,7 @@
         <a href="about.php">about</a>
         <a href="package.php">package</a>
         <a href="book.php">book</a>
+        <a href="CheckBooking.php">Check Booking</a>
     </nav>
     <div id="menu-btn" class="fas fa-bars"></div>
 
@@ -87,7 +88,7 @@
                 <p>I am happy with the service and the driver</p>
                 <h3>jonh jackson</h3>
                 <span>traveler</span>
-                <img src="images/pic-1.png"alt="">
+                <img src="images/p1.jpg"alt="">
             </div>
 
             <div class="swiper-slider slide">
@@ -100,7 +101,7 @@
                 <p>Can't wait to book again for the next vacation</p>
                 <h3>jonh jackson</h3>
                 <span>traveler</span>
-                <img src="images/pic-2.png"alt="">
+                <img src="images/p2.jpg"alt="">
             </div>
             <div class="swiper-slider slide">
                 <div class="stars">
@@ -114,7 +115,7 @@
                 <p>we really enjoy the trip along with the comfortable ride</p>
                 <h3>jonh jackson</h3>
                 <span>traveler</span>
-                <img src="images/pic-3.png"alt="">
+                <img src="images/p3.jpg"alt="">
             </div>
 
             <div class="swiper-slider slide">
@@ -129,7 +130,7 @@
                 <p>We'd love to travel with this rental car the next time for the family trip</p>
                 <h3>jonh jackson</h3>
                 <span>traveler</span>
-                <img src="images/pic-4.png"alt="">
+                <img src="images/p4.jpg"alt="">
             </div>
 
             <div class="swiper-slider slide">
@@ -144,7 +145,7 @@
                 <p>Thanks for your service, will try again</p>
                 <h3>jonh jackson</h3>
                 <span>traveler</span>
-                <img src="images/pic-5.png"alt="">
+                <img src="images/p5.jpg"alt="">
             </div>
             <div class="swiper-slider slide">
                 <div class="stars">
@@ -161,7 +162,7 @@
                 </p>
                 <h3>jonh jackson</h3>
                 <span>traveler</span>
-                <img src="images/pic-6.png"alt="">
+                <img src="images/p6.jpg"alt="">
             </div>
     </div>
 </section>
