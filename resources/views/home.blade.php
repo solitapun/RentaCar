@@ -73,7 +73,7 @@
         <div class="content">
             <h3>about us</h3>
             <p>
-                <b>BookACab</b> was founded in 2015, co-founder CADT student. <br>
+                <b>BookACab</b> was founded in 2023, co-founder CADT student. <br>
                 We aim to provide the safest and comfortable travel experience
                 to the customers enjoying their trip with family or friends
                 <br><br> Check out more about us
@@ -90,48 +90,44 @@
         <div class="box-container">
             <div class="box">
                 <div class="image">
-                    <img src="{{ asset('storage/images/Angkor-wat-sunrise.jpg') }}" alt="" style="width: 100%">
+                    <img src="{{ asset('storage/images/Angkor-wat.jpg') }}" alt="" style="width: 100%; height: 100%">
                 </div>
                 <div class="content">
-                    <h3>Angkor wat sunrise</h3>
-                    <p>Take a glance at the angkor wat temple where known as the famous ruin temple and honorable
-                        place </p>
+                    <h3>Angkor wat</h3>
+                    <p>Take a glance at the angkor wat temple and enjoy the sunset</p>
                     <a href="{{ route('book') }}" class="btn">book now</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="image">
-                    <img src="{{asset('storage/images/img-2.jpg')}}" alt="">
+                    <img src="{{ asset('storage/images/Bokor.png') }}" alt="" style="height: 100%; width: 100%">
                 </div>
                 <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Take a glance at the angkor wat temple where known as the famous ruin temple and honorable
-                        place</p>
+                    <h3>Bokor Mountain</h3>
+                    <p>Enjoy nature up on the mountain with always cold chilling weather</p>
                     <a href="{{ route('book') }}" class="btn">book now</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="image">
-                    <img src="{{ asset('storage/images/cambodia-koh-rong-samloem.jpg') }}" alt="">
+                    <img src="{{ asset('storage/images/cambodia-koh-rong-samloem.jpg') }}" alt="" style="width: 100%; height: 100%">
                 </div>
                 <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Take a glance at the angkor wat temple where known as the famous ruin temple and honorable
-                        place</p>
+                    <h3>Koh Rong</h3>
+                    <p>Go swimming , make sand-castle and enjoy its delicious foods !</p>
                     <a href="{{ route('book') }}" class="btn">book now</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="image">
-                    <img src="{{ asset('storage/images/boko.jpg') }}" alt="">
+                    <img src="{{ asset('storage/images/Kulen.png') }}" alt="" style="height: 100%; width: 100%">
                 </div>
                 <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Take a glance at the angkor wat temple where known as the famous ruin temple and honorable
-                        place</p>
+                    <h3>Kulen Mountain</h3>
+                    <p>Mountain where King Jayavarman II declared himself as god-king at its peak</p>
                     <a href="{{ asset('book') }}" class="btn">book now</a>
                 </div>
             </div>

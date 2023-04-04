@@ -1,7 +1,7 @@
 @extends('Layout.HeadAndFoot')
 
 @section('content')
-<div class="heading" style="background:url({{ asset('storage/images/about-img.jpg') }}); height:35rem;">
+<div class="heading" style="background:url({{ asset('storage/images/AboutUs.jpg') }}); height:35rem;">
     <div class="content">
         <h1 style="
         display: inline-block; background: var(--light-white);

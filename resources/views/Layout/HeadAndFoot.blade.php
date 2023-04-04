@@ -74,8 +74,8 @@
             <h3>Contact info</h3>
             <a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
             <a href="#"><i class="fas fa-phone"></i>+111-222-3333</a>
-            <a href="#"><i class="fas fa-envelope"></i>cadtcsstudent@gmail.com</a>
-            <a href="#"><i class="fas fa-map"></i>chroy chonvar ,phnom penh</a>
+            <a href="#"><i class="fas fa-envelope"></i>BookACab@gmail.com</a>
+            <a href="#"><i class="fas fa-map"></i>chroy changvar , phnom penh</a>
         </div>
         <div class="box">
             <h3>Follow us</h3>

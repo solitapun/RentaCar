@@ -1,6 +1,7 @@
 @extends('Layout.HeadAndFoot')
 
 @section('content')
+
 <div class="heading" style="background:url({{ asset('storage/images/Angkor-wat-sunrise1.jpg') }}); height:40rem;">
     <h1 style="
         display: inline-block; background: var(--light-white);
@@ -13,61 +14,88 @@
     </h1>
 </div>
 
+@if ($errors->any())
+    <div>
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
 <!--booking section starts-->
 <section class="booking">
     <h1 class="heading-title">book your trip</h1>
-    <form action="book_form.php" method="post" class="book-form">
+    <form method="POST" action="{{ route('booking') }}" class="book-form" accept-charset="UTF-8">
+        {{ csrf_field() }}
+
         <div class="flex">
             <div class="inputBox">
-                <span>name :</span>
-                <label>
-                    <input type="text" placeholder="Enter your name" name = "name">
-                </label>
+                <span>
+                    <label for="name">name :</label>
+                    <input type="text" placeholder="Enter your name" name = "name" id="name" required>
+                </span>
             </div>
+
             <div class="inputBox">
-                <span>Email :</span>
-                <label>
-                    <input type="email" placeholder="Enter your email" name = "email">
-                </label>
+                <span>
+                    <label for="email">email :</label>
+                    <input type="email" placeholder="Enter your email" name = "email" id="email" required>
+                </span>
             </div>
+
             <div class="inputBox">
-                <span>Phone :</span>
-                <label>
-                    <input type="tel" placeholder="Enter your number" name = "phone">
-                </label>
+                <span>
+                    <label for="phone">Phone :</label>
+                    <input type="tel" placeholder="Enter your number" name = "phone" id="phone" required>
+                </span>
             </div>
+
             <div class="inputBox">
-                <span>address :</span>
-                <label>
-                    <input type="text" placeholder="Enter your address" name = "address">
-                </label>
+                <span>
+                    <label for="address">address :</label>
+                    <input type="text" placeholder="Enter your address" name = "address" id="address" required>
+                </span>
             </div>
+
             <div class="inputBox">
-                <span>Destination :</span>
-                <label>
-                    <input type="text" placeholder="place you want to visit" name = "destination">
-                </label>
+                <span>
+                    <label for="destination">destination :</label>
+                    <select id="destination" name="destination" required>
+                        <option value="Angkor Wat">Angkor Wat</option>
+                        <option value="Bokor Mountain">Bokor Mountain</option>
+                        <option value="Koh Rong">Koh Rong</option>
+                        <option value="Kulen Mountain">Kulen Mountain</option>
+                        <option value="Phnom Penh City">Phnom Penh City</option>
+                        <option value="Sihanoukville">Sihanoukville</option>
+                    </select>
+                </span>
             </div>
+
             <div class="inputBox">
-                <span>Passenger :</span>
-                <label>
-                    <input type="number" placeholder="number of guests" name = "guests">
-                </label>
+                <span>
+                    <label for="passenger">Passenger :</label>
+                    <input type="number" placeholder="Number of guests" name = "passenger" id="passenger" required>
+                </span>
             </div>
+
             <div class="inputBox">
-                <span>From :</span>
-                <label>
-                    <input type="date" placeholder="Enter your name" name = "From">
-                </label>
+                <span>
+                    <label for="from">From :</label>
+                    <input type="date" name = "from" id="from" required>
+                </span>
             </div>
+
             <div class="inputBox">
-                <span>To :</span>
-                <label>
-                    <input type="date" placeholder="Enter your name" name = "To">
-                </label>
+                <span>
+                    <label for="to">To :</label>
+                    <input type="date" name = "to" id="to" required>
+                </span>
             </div>
         </div>
-        <input type="submit" value="submit" class="btn" name="send">
+
+        <button type="submit" class="btn">Submit</button>
     </form>
 </section>
 <!--booking section  ends-->
