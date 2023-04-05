@@ -21,4 +21,10 @@ class PageController extends Controller
     public function checkBooking(){
         return view('checkBooking');
     }
+    public function thankYou(){
+        return view('bookingComplete');
+    }
+    public function comingsoon(){
+        return view('comingSoon');
+    }
 }

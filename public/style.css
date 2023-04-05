@@ -32,7 +32,6 @@ background-color: var(--white);}
 html::-webkit-scrollbar-thumb{
     background-color: var(--light-black);
 }
-
 section{
     padding: 5rem 10%;
 }
@@ -40,9 +39,7 @@ section{
     0%{
         transform: scale(0);
         opacity: 0;
-
     }
-
 }
 .heading{
     background-size: cover!important;
@@ -52,7 +49,6 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .header h1{
     font-size: 10rem;
@@ -527,6 +523,13 @@ section{
     color: var(--main-color);
 }
 
+#countdown{
+    font-size: 24px;
+    font-weight: bold;
+    color: purple;
+    text-align: center;
+    margin-top: 50px;
+}
 
 /*media queries*/
 @media(max-width: 1200px) {
@@ -547,7 +550,6 @@ section{
         font-size: 10vw;
 
     }
-
 }
 @media(max-width: 768px) {
 

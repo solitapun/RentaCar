@@ -1,6 +1,7 @@
 @extends('Layout.HeadAndFoot')
 
 @section('content')
+
 <div class="heading" style="background:url({{ asset('storage/images/AboutUs.jpg') }}); height:35rem;">
     <div class="content">
         <h1 style="
@@ -11,7 +12,6 @@
         padding: 3rem 5rem;
         cursor: default">ABOUT US</h1>
     </div>
-
 </div>
 
 <!--about section starts-->
@@ -20,9 +20,10 @@
         <img src="{{ asset('storage/images/cambodia-map.jpg') }}" alt="">
     </div>
     <div class="content">
-        <h3>why choose us?</h3>
-        <p>lorem ghsege ygyyyyyyyyyyyyyy.</p>
-        <p>Lorem3000wshhhhhhhhhhh</p>
+        <h3>why choose us?</h3><br>
+        <p><b>EXCEPTIONAL CUSTOMER SERVICE</b></p>
+        <p>Providing exceptional customer service is our USP, our main strength.
+            We take pride in providing outstanding services to our clients.</p>
         <div class="icons-container">
             <div class="icons">
                 <i class="fas fa-map"></i>
@@ -37,7 +38,6 @@
                 <i class="fas fa-headset"></i>
                 <span>24/7 guide service</span>
             </div>
-
         </div>
     </div>
 </section>
@@ -56,7 +56,7 @@
                     <i class=" fas fa-star"></i>
                 </div>
                 <p>I am happy with the service and the driver</p>
-                <h3>jonh jackson</h3>
+                <h3>Elizabeth Lutz</h3>
                 <span>traveler</span>
                 <img src="{{ asset('storage/images/p1.jpg') }}" alt="">
             </div>
@@ -66,7 +66,6 @@
                     <i class=" fas fa-star"></i>
                     <i class=" fas fa-star"></i>
                     <i class=" fas fa-star"></i>
-
                 </div>
                 <p>Can't wait to book again for the next vacation</p>
                 <h3>jonh jackson</h3>
@@ -83,7 +82,7 @@
                     <i class=" fas fa-star"></i>
                 </div>
                 <p>we really enjoy the trip along with the comfortable ride</p>
-                <h3>jonh jackson</h3>
+                <h3>Jordon Stephens</h3>
                 <span>traveler</span>
                 <img src="{{ asset('storage/images/p3.jpg') }}" alt="">
             </div>
@@ -97,7 +96,7 @@
                     <i class=" fas fa-star"></i>
                 </div>
                 <p>We'd love to travel with this rental car the next time for the family trip</p>
-                <h3>jonh jackson</h3>
+                <h3>Kaitlyn Booker</h3>
                 <span>traveler</span>
                 <img src="{{ asset('storage/images/p4.jpg') }}" alt="">
             </div>
@@ -111,7 +110,7 @@
                     <i class=" fas fa-star"></i>
                 </div>
                 <p>Thanks for your service, will try again</p>
-                <h3>jonh jackson</h3>
+                <h3>Gregory Edwards</h3>
                 <span>traveler</span>
                 <img src="{{asset('storage/images/p5.jpg')}}" alt="">
             </div>
@@ -128,7 +127,7 @@
                     <br>and recommended us many wonderful places to visit.<br>
                     In addition, he was also our guide to many historical places.
                 </p>
-                <h3>jonh jackson</h3>
+                <h3>Aylin Wolf</h3>
                 <span>traveler</span>
                 <img src="{{ asset('storage/images/p6.jpg') }}" alt="">
             </div>

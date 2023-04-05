@@ -19,7 +19,6 @@ class BookingController extends Controller
             'to' => 'required|date',
         ]);
 
-
         $listUser = new ListUser;
         $listUser->name = $validatedData['name'];
         $listUser->email = $validatedData['email'];
@@ -29,10 +28,10 @@ class BookingController extends Controller
         $listUser->passenger = $validatedData['passenger'];
         $listUser->from = $validatedData['from'];
         $listUser->to = $validatedData['to'];
-        $listUser->user_id = rand(100000,999999);
+        $listUser->booking_id = rand(100000,999999);
         $listUser->save();
 
-        return redirect('/')->with('success', 'Your Booking is Completed!');
+        return redirect('/book/complete')->with('success', 'Your Booking is Completed!');
     }
 }
     /*bin2hex(random_bytes(16));*/

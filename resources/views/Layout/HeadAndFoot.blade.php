@@ -65,24 +65,24 @@
 
         <div class="box">
             <h3>Extra links</h3>
-            <a href="#"><i class="fas fa-angle-right"></i>ask questions</a>
-            <a href="#"><i class="fas fa-angle-right"></i>about us</a>
-            <a href="#"><i class="fas fa-angle-right"></i>privacy policy</a>
-            <a href="#"><i class="fas fa-angle-right"></i>term of use</a>
+            <a href="{{ route('comingSoon') }}"><i class="fas fa-angle-right"></i>ask questions</a>
+            <a href="{{ route('about') }}"><i class="fas fa-angle-right"></i>about us</a>
+            <a href="{{ route('comingSoon') }}"><i class="fas fa-angle-right"></i>privacy policy</a>
+            <a href="{{ route('comingSoon') }}"><i class="fas fa-angle-right"></i>term of use</a>
         </div>
         <div class="box">
             <h3>Contact info</h3>
-            <a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
-            <a href="#"><i class="fas fa-phone"></i>+111-222-3333</a>
-            <a href="#"><i class="fas fa-envelope"></i>BookACab@gmail.com</a>
-            <a href="#"><i class="fas fa-map"></i>chroy changvar , phnom penh</a>
+            <a><i class="fas fa-phone"></i>+123-456-7890</a>
+            <a><i class="fas fa-phone"></i>+111-222-3333</a>
+            <a><i class="fas fa-envelope"></i>BookACab@gmail.com</a>
+            <a><i class="fas fa-map"></i>chroy changvar , phnom penh</a>
         </div>
         <div class="box">
             <h3>Follow us</h3>
-            <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
-            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
-            <a href="#"><i class="fab fa-instagram"></i>instagram</a>
-            <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+            <a href="{{ route('comingSoon') }}"><i class="fab fa-facebook-f"></i>facebook</a>
+            <a href="{{ route('comingSoon') }}"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="{{ route('comingSoon') }}"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="{{ route('comingSoon') }}"><i class="fab fa-linkedin"></i>linkedin</a>
         </div>
     </div>
     <div class="credit"> create by <span> BookACab </span> Team | all right reserved!</div>

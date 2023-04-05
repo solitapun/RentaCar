@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\BookingController;
-use App\Models\ListUser;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,13 +20,16 @@ Route::get('/', function () {
     return view('home');
 });
 
-/* Pages */
+/* Pages Routes */
 Route::get('/home', [PageController::class, 'home'])->name('home');
 Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/package', [PageController::class, 'package'])->name('package');
 Route::get('/book', [PageController::class, 'book'])->name('book');
 Route::get('/checkBooking', [PageController::class, 'checkBooking'])->name('checkBooking');
+Route::get('/book/complete', [PageController::class, 'thankYou'])->name('thankYou');
+Route::get('/comingsoon', [PageController::class, 'comingsoon'])->name('comingSoon');
 
+/* Booking Route */
 Route::post('/book/booking', [BookingController::class, 'Register'])->name('booking');
 
 
