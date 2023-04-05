@@ -27,7 +27,7 @@
 <!--booking section starts-->
 <section class="booking">
     <h1 class="heading-title">book your trip</h1>
-    <form method="POST" action="{{ route('booking') }}" class="book-form" accept-charset="UTF-8">
+    <form method="POST" action="{{ route('booking') }}" class="book-form">
         {{ csrf_field() }}
 
         <div class="flex">

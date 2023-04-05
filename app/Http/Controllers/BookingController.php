@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\ListUser;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class BookingController extends Controller
 {
@@ -28,10 +29,22 @@ class BookingController extends Controller
         $listUser->passenger = $validatedData['passenger'];
         $listUser->from = $validatedData['from'];
         $listUser->to = $validatedData['to'];
-        $listUser->booking_id = rand(100000,999999);
+        $listUser->booking_id = rand(100000,999999);    /*bin2hex(random_bytes(16));*/
         $listUser->save();
 
         return redirect('/book/complete')->with('success', 'Your Booking is Completed!');
     }
+
+    public function show(Request $request)
+    {
+        $id = $request->input('bookingID');
+        $user = DB::table('list_users')->where('booking_id', $id)->first();
+
+        if ($user) {
+            return view('bookingInfo', ['user' => $user]);
+        } else {
+            return view('bookingNotFound');
+        }
+    }
 }
-    /*bin2hex(random_bytes(16));*/
+

@@ -27,4 +27,7 @@ class PageController extends Controller
     public function comingsoon(){
         return view('comingSoon');
     }
+    public function showInfo(){
+        return view('bookingInfo');
+    }
 }

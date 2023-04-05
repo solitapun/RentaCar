@@ -16,13 +16,19 @@
 
 <section class="booking">
     <h1 class="heading-title">Check Your Booking</h1>
-    <form action="Reciept.blade.php" method="post" class="book-form">
+    <form action="{{ route('show') }}" method="post" class="book-form">
+        {{ csrf_field() }}
+
         <div class="flex">
             <div class="inputBox">
-                <span>ID :</span>
-                <input type="text" placeholder="Enter your ID" name = "ID">
+                <span>
+                    <label for="bookingID">Booking ID :</label>
+                    <input type="text" placeholder="Enter your booking ID" name = "bookingID" id="bookingID" required>
+                </span>
             </div>
         </div>
+
+        <button type="submit" class="btn">Submit</button>
     </form>
 </section>
 

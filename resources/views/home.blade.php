@@ -42,24 +42,26 @@
     <section class="services">
         <h1 class="heading-title">our service</h1>
         <div class="box-container">
-            <div class="box">
+
+            <a href="{{ route('comingSoon') }}" class="box">
                 <img src="{{ asset('storage/images/travel-luggage.png') }}" alt="">
                 <h3>adventure</h3>
-            </div>
+            </a>
 
-            <div class="box">
+            <a href="{{ route('comingSoon') }}" class="box">
                 <img src="{{ asset('storage/images/icon-2.png') }}" alt="">
                 <h3>tour guide</h3>
-            </div>
+            </a>
 
-            <div class="box">
+            <a href="{{ route('comingSoon') }}" class="box">
                 <img src="{{ asset('storage/images/driver.png') }}" alt="">
                 <h3>Best Driver</h3>
-            </div>
-            <div class="box">
+            </a>
+
+            <a href="{{ route('comingSoon') }}" class="box">
                 <img src="{{ asset('storage/images/pay.png') }}" alt="">
                 <h3>Online Payment</h3>
-            </div>
+            </a>
         </div>
     </section>
     <!--services section ends-->
@@ -75,7 +77,7 @@
             <p>
                 <b>BookACab</b> was founded in 2023, co-founder CADT student. <br>
                 We aim to provide the safest and comfortable travel experience
-                to the customers enjoying their trip with family or friends
+                to the customers enjoying their trip with family or friends !
                 <br><br> Check out more about us
             </p>
             <a href="{{ route('about') }}" class="btn">read more</a>

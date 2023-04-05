@@ -25,7 +25,7 @@
     <script src="{{ asset('script.js') }}"></script>
 
     {{-- image icon on browser tab --}}
-    <link rel="icon" type="image/png" href="{{ asset('logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('storage/images/logo.png') }}">
 </head>
 
 <body>
@@ -66,7 +66,7 @@
         <div class="box">
             <h3>Extra links</h3>
             <a href="{{ route('comingSoon') }}"><i class="fas fa-angle-right"></i>ask questions</a>
-            <a href="{{ route('about') }}"><i class="fas fa-angle-right"></i>about us</a>
+            <a href="{{ route('comingSoon') }}"><i class="fas fa-angle-right"></i>report problem</a>
             <a href="{{ route('comingSoon') }}"><i class="fas fa-angle-right"></i>privacy policy</a>
             <a href="{{ route('comingSoon') }}"><i class="fas fa-angle-right"></i>term of use</a>
         </div>

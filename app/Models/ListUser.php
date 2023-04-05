@@ -9,6 +9,6 @@ class ListUser extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'name', 'email', 'phone', 'address', 'destination', 'passenger', 'from', 'to','user_id',
+        'name', 'email', 'phone', 'address', 'destination', 'passenger', 'from', 'to','booking_id',
     ];
 }
