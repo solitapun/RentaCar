@@ -35,9 +35,4 @@ class BookingController extends Controller
         return redirect('/')->with('success', 'Your Booking is Completed!');
     }
 }
-/*'address' => $request->input('address'),
-            'destination' => $request->input('destination'),
-            'passenger' => $request->input('passenger'),
-            'from' => $request->input('from'),
-            'to' => $request->input('to'),
-            'user_id' => rand(100000,999999),*/
+    /*bin2hex(random_bytes(16));*/
