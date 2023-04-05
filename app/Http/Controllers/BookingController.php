@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use app\Models\ListUser;
+use App\Models\ListUser;
 use Illuminate\Http\Request;
 
 class BookingController extends Controller
@@ -20,24 +20,24 @@ class BookingController extends Controller
         ]);
 
 
-        $ListUser = new ListUser();
-        /*'address' => $request->input('address'),
+        $listUser = new ListUser;
+        $listUser->name = $validatedData['name'];
+        $listUser->email = $validatedData['email'];
+        $listUser->phone =  $validatedData['phone'];
+        $listUser->address = $validatedData['address'];
+        $listUser->destination = $validatedData['destination'];
+        $listUser->passenger = $validatedData['passenger'];
+        $listUser->from = $validatedData['from'];
+        $listUser->to = $validatedData['to'];
+        $listUser->user_id = rand(100000,999999);
+        $listUser->save();
+
+        return redirect('/')->with('success', 'Your Booking is Completed!');
+    }
+}
+/*'address' => $request->input('address'),
             'destination' => $request->input('destination'),
             'passenger' => $request->input('passenger'),
             'from' => $request->input('from'),
             'to' => $request->input('to'),
             'user_id' => rand(100000,999999),*/
-        $ListUser->name = $validatedData['name'];
-        $ListUser->email = $validatedData['email'];
-        $ListUser->phone =  $validatedData['phone'];
-        $ListUser->address = $validatedData['address'];
-        $ListUser->destination = $validatedData['destination'];
-        $ListUser->passenger = $validatedData['passenger'];
-        $ListUser->from = $validatedData['from'];
-        $ListUser->to = $validatedData['to'];
-        $ListUser->user_id = bin2hex(random_bytes(16));
-        $ListUser->save();
-
-        return redirect('/')->with('success', 'Your Booking is Completed!');
-    }
-}

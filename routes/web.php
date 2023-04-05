@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\BookingController;
+use App\Models\ListUser;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,6 @@ Route::get('/package', [PageController::class, 'package'])->name('package');
 Route::get('/book', [PageController::class, 'book'])->name('book');
 Route::get('/checkBooking', [PageController::class, 'checkBooking'])->name('checkBooking');
 
-Route::post('/booking', [BookingController::class, 'Register'])->name('booking');
+Route::post('/book/booking', [BookingController::class, 'Register'])->name('booking');
 
 
