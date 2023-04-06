@@ -15,18 +15,18 @@
                 </div>
 
                 <div class="swiper-slide slide"
-                     style="background:url('{{ asset('storage/images/bus-min.jpg') }}') no-repeat; width:1024px; height: 683px;">
+                     style="background:url('{{ asset('storage/images/bus-min.jpg') }}') no-repeat">
                     <div class="content">
                         <span>Book Us Now!</span>
-                        <h3>discover the new places</h3>
+                        <h3>discover new places</h3>
                         <a href="{{ route('about') }}" class="btn">discover more</a>
                     </div>
                 </div>
                 <div class="swiper-slide slide"
-                     style=" background:url('{{ asset('storage/images/car-rental.jpg') }}') no-repeat ">
+                     style=" background:url('{{ asset('storage/images/car-rental.jpg') }}') no-repeat">
                     <div class="content">
-                        <span>explore, discover,travel</span>
-                        <h3>make your tour worthwhile</h3>
+                        <span>Book Us Now!</span>
+                        <h3>make your trip worthwhile</h3>
                         <a href="{{ route('about') }}" class="btn">discover more</a>
                     </div>
                 </div>

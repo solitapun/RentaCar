@@ -7,7 +7,7 @@
     <title>BookACab</title>
 
     <!--swiper css link-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
     <!--- font awesome cdn link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
@@ -18,14 +18,14 @@
     <!---Bootstrap Link--->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
 
-    <!---swiper js  link --->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
     <!-----custom js file link--->
     <script src="{{ asset('script.js') }}"></script>
 
     {{-- image icon on browser tab --}}
     <link rel="icon" type="image/png" href="{{ asset('storage/images/logo.png') }}">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -89,5 +89,39 @@
 </section>
 <!---footer section end-->
 
+<!---swiper js  link --->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+<script>
+    const swiper = new Swiper(".reviews-slider", {
+        loop: true,
+        spaceBetween: 20,
+        autoHeight: true,
+        grabCursor: true,
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    });
+</script>
 </body>
 </html>

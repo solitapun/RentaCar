@@ -367,7 +367,7 @@ section{
 }
 .reviews .slide{
     padding: 2rem;
-    border: var(--white);
+    border: var(--black);
     text-align: center;
     box-shadow: var(--box-shadow);
     user-select: none;

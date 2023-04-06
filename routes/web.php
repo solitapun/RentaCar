@@ -36,8 +36,4 @@ Route::post('/book/booking', [BookingController::class, 'Register'])->name('book
 /* Check Booking Route */
 Route::post('/checkBooking/show', [BookingController::class, 'show'])->name('show');
 
-Route::get('/checkBooking/{id}', function ($id) {
-    $user = DB::table('list_users')->where('booking_id', $id)->first();
-    return view('bookingInfo', ['user' => $user]);
-});
 
