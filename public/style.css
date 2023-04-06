@@ -144,7 +144,8 @@ section{
     justify-content: center;
     background-size: cover !important;
     background-position: center !important;
-    min-height: 60rem;
+    min-height: 50rem;
+    height: 57rem;
 }
 .home .slide .content{
     width: 85rem;
@@ -175,9 +176,9 @@ section{
 }
 .home .swiper-button-next,
 .home .swiper-button-prev{
-    top:inherit;
+    top: initial;
     left: inherit;
-    bottom: 0;
+    bottom: 6.3rem;
     right: 0;
     height: 7rem;
     width: 7rem;
