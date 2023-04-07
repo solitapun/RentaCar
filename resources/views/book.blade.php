@@ -83,14 +83,14 @@
             <div class="inputBox">
                 <span>
                     <label for="from">From :</label>
-                    <input type="date" name = "from" id="from" required>
+                    <input type="date" name = "from" id="from" min="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" required>
                 </span>
             </div>
 
             <div class="inputBox">
                 <span>
                     <label for="to">To :</label>
-                    <input type="date" name = "to" id="to" required>
+                    <input type="date" name = "to" id="to" min="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" required>
                 </span>
             </div>
         </div>
