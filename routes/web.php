@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\BookingController;
 use App\Mail\WelcomeMail;
+use Illuminate\Support\Facades\Mail;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +39,7 @@ Route::post('/book/booking', [BookingController::class, 'Register'])->name('book
 Route::post('/checkBooking/show', [BookingController::class, 'show'])->name('show');
 //Route for mailing
 Route::get('/email', function() {
+    Mail::to('solitapun888@gmail.com')->send(new WelcomeMail());
     return new WelcomeMail();
 }
 );
