@@ -3,7 +3,7 @@
 
 We thank you for visiting us. Hope to see you again soon ^^
 
-<x-mail::button :url="''">
+<x-mail::button :url="'home'">
 Done
 </x-mail::button>
 
