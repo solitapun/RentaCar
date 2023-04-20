@@ -1,12 +1,12 @@
 <x-mail::message>
-# Introduction
+# Welcome to BookaCab!
 
-The body of your message.
+We thank you for visiting us. Hope to see you again soon ^^
 
 <x-mail::button :url="''">
-Button Text
+Done
 </x-mail::button>
 
 Thanks,<br>
-{{ config('app.name') }}
+BookaCab Team
 </x-mail::message>
