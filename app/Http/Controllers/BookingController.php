@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\ListUser;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Mail\WelcomeMail;
+use Illuminate\Support\Facades\Mail;
 
 class BookingController extends Controller
 {
@@ -31,6 +33,9 @@ class BookingController extends Controller
         $listUser->to = $validatedData['to'];
         $listUser->booking_id = rand(100000,999999);    /*bin2hex(random_bytes(16));*/
         $listUser->save();
+
+        // Send the booking confirmation email
+        Mail::to($listUser->email)->send(new WelcomeMail($listUser->booking_id));
 
         return redirect('/book/complete')->with('success', 'Your Booking is Completed!');
     }

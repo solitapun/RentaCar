@@ -3,7 +3,6 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
@@ -13,12 +12,13 @@ class WelcomeMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $bookingID;
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct($bookingID)
     {
-        //
+        $this->bookingID = $bookingID;
     }
 
     /**
@@ -37,7 +37,7 @@ class WelcomeMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            markdown: 'emails.welcome',
+            view: 'emails.sendID', with: ['bookingID'=>$this->bookingID]
         );
     }
 
