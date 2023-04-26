@@ -23,7 +23,7 @@
             <div class="inputBox">
                 <span>
                     <label for="bookingID">Booking ID :</label>
-                    <input type="text" placeholder="Enter your booking ID" name = "bookingID" id="bookingID" required>
+                    <input type="number" class="no-arrows" placeholder="Enter your booking ID" name = "bookingID" id="bookingID" require>
                 </span>
             </div>
         </div>

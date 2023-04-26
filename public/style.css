@@ -599,6 +599,16 @@ section{
     margin-top: 50px;
 }
 
+.no-arrows::-webkit-outer-spin-button,
+.no-arrows::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.no-arrows {
+    -moz-appearance: textfield;
+}
+
 /*media queries*/
 @media(max-width: 1200px) {
     section{

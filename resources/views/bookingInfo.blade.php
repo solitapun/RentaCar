@@ -14,7 +14,15 @@
                     <li>Trip Start: <p> {{ $user->from }} </p></li>
                     <li>Trip end: <p> {{ $user->to }} </p></li>
                 </ul>
-                <a href="{{ url()->previous() }}" class="btn" style="margin-bottom: 5px">Go Back</a>
+                <div style="display: flex; justify-content: space-between">
+                    <a href="{{ url()->previous() }}" class="btn" style="margin-bottom: 5px">Go Back</a>
+
+                    <form method="POST" action="{{ url('/checkBooking/show/cancel/' . $user->booking_id) }}">
+                        @csrf
+                        @method('DELETE')
+                        <a href="{{ route('home') }}" class="btn" style="margin-bottom: 5px" type="submit">Cancel Booking</a>
+                    </form>
+                </div>
             </div>
         </div>
     </setion>

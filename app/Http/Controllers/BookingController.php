@@ -51,5 +51,12 @@ class BookingController extends Controller
             return view('bookingNotFound');
         }
     }
+
+    public function destroy($booking_id){
+        $user = ListUser::where('booking_id', $booking_id)->firstOrFail();
+        $user->delete();
+
+        return redirect('/')->with('success');
+    }
 }
 

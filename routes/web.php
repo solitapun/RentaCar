@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MailController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\BookingController;
 use App\Mail\WelcomeMail;
@@ -37,4 +36,7 @@ Route::post('/book/booking', [BookingController::class, 'Register'])->name('book
 
 /* Check Booking Route */
 Route::post('/checkBooking/show', [BookingController::class, 'show'])->name('show');
+
+/* Cancel Booking Route*/
+Route::delete('/checkBooking/show/cancel/{booking_id}', [BookingController::class, 'destroy'])->name('cancel');
 
